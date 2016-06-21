@@ -47,7 +47,7 @@ $(window).load(function(){
 
 
 /***** Subscribe JS start *****/
-$("#notifyMe").notifyMe();
+// $("#notifyMe").notifyMe();
 /***** Subscribe JS end*****/
 
 /***** Full height function start *****/
@@ -66,9 +66,9 @@ $(window).on("resize", function () {
 /***** Pogody function start *****/
 function pogody(){
 	/*Counter JS*/
-	$('#countdown').countdown({
-		date: '9/24/2016',
-	});
+	// $('#countdown').countdown({
+	// 	date: '9/24/2016',
+	// });
 	/*About Owl JS*/
 	$('.qualities').owlCarousel({
     loop:true,

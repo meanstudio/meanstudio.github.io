@@ -13,26 +13,10 @@ app.controller('ContactController', function ($scope, $http) {
         if (contactform.$valid) {
             $http({
                 method  : 'POST',
-                url     : 'http://formspree.io/viditsax@gmail.com',
+                url     : 'https://formspree.io/vviidditt@gmail.com',
                 data    : $.param($scope.formData),  //param method from jQuery
-                headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  //set the headers so angular passing info as form data (not request payload)
-            }).success(function(data){
-                console.log(data);
-                if (data.success) { //success comes from the return json object
-                    $scope.submitButtonDisabled = false;
-		$scope.formData = null;
-                    $scope.resultMessage = data.message;
-                    $scope.result='bg-success';
-                } else {
-                    $scope.submitButtonDisabled = false;
-					$scope.resultMessage = data.message;
-                    $scope.result='bg-danger';
-                }
-            });
-        } else {
-            $scope.submitButtonDisabled = false;
-            $scope.resultMessage = 'Failed :( Please fill out all the fields.';
-            $scope.result='bg-danger';
+                headers : { 'Accept': 'application/json', 'Content-Type': 'application/x-www-form-urlencoded' }  //set the headers so angular passing info as form data (not request payload)
+            })
         }
     }
 });
