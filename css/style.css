@@ -90,6 +90,13 @@ p, .address-detail a {
 /****************************/
 /** Main **/
 /****************************/
+.wellcome-text {
+  color: grey;
+}
+.typing-text {
+  font-size: 30px;
+  color: black;
+}
 .pad-zero {
   padding: 0; }
 
