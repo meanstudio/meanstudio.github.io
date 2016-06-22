@@ -134,8 +134,8 @@ function pogody(){
 	/*Typed js for title tag*/
 	$("#title").typed({
     strings: ["Hello..!", "We are..!", "Mean Studio..!"],
-		typeSpeed: 300,
-		backDelay: 900,
+		typeSpeed: 200,
+		backDelay: 600,
 		loop: true,
 		cursorChar: "|",
 		contentType: 'html', // or text
